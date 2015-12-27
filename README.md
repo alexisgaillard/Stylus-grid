@@ -43,7 +43,6 @@ For a 5 columns fluid grid system with 2% of gutter:
 ```stylus
 grid(Grid, Col, 5, 2%)
 ```
-etc...
 
 All options available are:
 ```stylus
@@ -58,7 +57,7 @@ All options available are:
   deepness = 6 //define the number of decimals on the percentage's width values
 ```
 
-A shortand to control responsivness will follow soon.
+A shortand to control responsive features will follow soon.
 
 ## Credits
 
