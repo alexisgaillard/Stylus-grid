@@ -8,7 +8,7 @@ Install the stylus-grid.styl in your mixin folder, import, then init as follow:
 @import "stylus-grid"
 grid()
 ```
-By default the mixin output the CSS required for a 12 columns fluid grid system with 1% of gutter and a maximum width of 1272px.
+By default the mixin output the CSS for a 12 columns fluid grid system with 1% of gutter and a maximum width of 1272px.
 
 
 Your markup should look like this:
