@@ -1,5 +1,6 @@
 # stylus-grid
-A simple and semantic grid system written in Stylus
+A simple and semantic grid system written in Stylus.
+Example page at [http://alexisgaillard.github.io/stylus-grid/](http://alexisgaillard.github.io/stylus-grid/)
 
 ### Get started
 By default the mixin output a 12 column fluid grid system with 1% of gutter and a maximum width of 1272px.
