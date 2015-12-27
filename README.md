@@ -2,6 +2,9 @@
 A simple and semantic grid system written in Stylus.<br/>
 Example page at [http://alexisgaillard.github.io/stylus-grid/](http://alexisgaillard.github.io/stylus-grid/)
 
+### Dependencies
+  * [stylus](https://github.com/LearnBoost/stylus)
+
 ### Get started
 Install the stylus-grid.styl in your mixin folder, import, then init as follow:
 ```stylus
@@ -51,9 +54,12 @@ All options available are:
   gutter-inner = false, //if true set de gutters as padding instead of margin
   max-width = 1272px, //value in px or false
   pre-post = true, //if false avoid the output of the .Pre and .Post classes
-  nesting = false, //output CSS reuired for columns nesting
+  nesting = false, //output CSS required for columns nesting
   deepness = 6 //define the number of decimals on the percentage's width values
 ```
+
+A shortand to control responsivness will follow soon.
+
 ## Credits
 
 Developed by [Alexis Gaillard](https://alexisgaillard.com/). Licensed under [MIT](http://opensource.org/licenses/mit-license.php).
