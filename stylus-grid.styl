@@ -1,0 +1,97 @@
+grid(
+  container-selector-name = Grid,
+  column-number-selector-name = Col,
+  column-number = 12, 
+  gutter-w = 1%,  
+  gutter-inner = false,
+  max-width = 1272px,
+  pre-post = true,
+  nesting = false,
+  deepness = 6
+)
+
+  .{container-selector-name}
+    position relative
+    &:after
+      content ""
+      display table
+      clear both
+    if max-width
+      max-width max-width
+    if gutter-inner
+      width 100%
+      margin-right 0
+      margin-left 0
+    else
+      width 100% - gutter-w
+      margin gutter-w*.5 auto
+      margin-top 0
+      margin-bottom 0   
+        
+  [class*=\"{column-number-selector-name}__"]
+    if gutter-inner
+      margin-right 0
+      margin-left 0
+    else
+      padding-right 0
+      padding-left 0
+    float Left
+  
+  set-margin()
+    if gutter-inner
+      padding-right gutter-w*.5
+      padding-left gutter-w*.5
+    else
+      margin-right gutter-w*.5
+      margin-left gutter-w*.5
+        
+  if gutter-inner
+    for num in (1..column-number - 1)	  	
+      .{column-number-selector-name}__{num}
+        width ceil((((100%/column-number)*num) - (gutter-w)), deepness)
+        set-margin()
+          
+    for num in (column-number..column-number)	  	
+      .{column-number-selector-name}__{num}
+        width ceil(100% - (gutter-w),deepness)
+        set-margin()
+  else
+    for num in (1..column-number - 1)
+        .{column-number-selector-name}__{num}
+          width ceil( (((100%/column-number)*num) - (gutter-w)), deepness)
+          set-margin()
+          if nesting
+            &.Nest
+              width ceil((100%/column-number)*num, deepness)
+                        
+    for num in (column-number..column-number)     
+      .{column-number-selector-name}__{num}
+        width ceil(100% - (gutter-w),deepness)
+        set-margin()
+        if nesting
+          &.Nest
+            width 100%
+                
+  if pre-post
+    if gutter-inner
+      for num in (1..column-number - 1)	  	
+        .Pre__{num}
+          margin-left ceil(((100%/column-number)*num) + (gutter-w*.05), deepness)
+      for num in (1..column-number - 1)	  	
+        .Post__{num}
+          margin-right ceil(((100%/column-number)*num) - (gutter-w*.05), deepness)
+    else
+      for num in (1..column-number - 1)      
+        .Pre__{num}
+          margin-left ceil( (((100%/column-number)*num) + gutter-w*.5), deepness)
+          if nesting
+            &.Nest
+              margin-left ceil((100%/column-number)*num, deepness)
+      for num in (1..column-number - 1)      
+        .Post__{num}
+          margin-right ceil(((100%/column-number)*num) - (gutter-w*.5), deepness)
+          if nesting
+            &.Nest
+              margin-left ceil((100%/column-number)*num, deepness)
+
+    
