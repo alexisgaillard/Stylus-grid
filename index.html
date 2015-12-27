@@ -2,8 +2,21 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Stylus-grid by Alexis Gaillard</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <title>Stylus Semantic Grid</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple and semantic grid system written in Stylus.">
+    <meta name="author" content="Alexis Gaillard">
+    <meta property="og:title" content="Stylus Semantic Grid" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://alexisgaillard.github.io/stylus-grid/" />
+    <meta property="og:image" content="http://alexisgaillard.github.io/stylus-grid/fb.jpg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@MovingIslands">
+    <meta name="twitter:creator" content="@MovingIslands">
+    <meta name="twitter:title" content="Stylus Semantic Grid">
+    <meta name="twitter:description" content="A simple and semantic grid system written in Stylus, this mixin give you freedom to create completely custom grids, with perfectly optimized outputs, in less than a line.">
+    <meta name="twitter:image" content="http://alexisgaillard.github.io/stylus-grid/fb.jpg">
+    <link rel="stylesheet" type="text/css" href="http://alexisgaillard.github.io/stylus-grid/stylesheets/stylesheet.css" media="screen">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -59,10 +72,19 @@
   <section class="Section">
     <div class="Grid">
       <div class="Col__8 Pre__2 Post__2">
-      <p>A simple and semantic grid system written in Stylus, with this mixin you can create a completely custom grid, with a perfectly optimized output for performance concerns.</p>
+      <p>A simple and semantic grid system written in Stylus, this mixin give you freedom to create completely custom grids, in less than a line,  ~ 2k minified.</p>
       </div>
       <div class="Col__6">
         <p>Get started:</p>
+        <p>01 Clone</p>
+        <pre>
+          <code class="bash">
+# git clone git://github.com/alexisgaillard/stylus-grid.git
+# cd grid_stylus
+# stylus stylus-grid.styl -o path/to/your/stylesheets
+          </code>
+        </pre>
+        <p>02 Import and init</p>
         <pre>
           <code class="styl">
 @import "stylus-grid"
