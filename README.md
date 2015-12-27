@@ -11,7 +11,7 @@ grid()
 
 Your markup should look like this:
 ```html
-<div class="Grid">;
+<div class="Grid">
   <div class="Col__1">...</div>
   <div class="Col__11">...</div>
   <div class="Col__2">...</div>
@@ -22,14 +22,14 @@ Your markup should look like this:
 
 We can add margin before or after an element with the ".Pre / .Post" classes:
 ```html
-<div class="Grid">;
+<div class="Grid">
   <div class="Col__2 Pre__2 Post__8">...</div>
   <div class="Col__2 Pre__4 Post__6">...</div>
   ...
 </div>
 ```
 
-For a 12 columns fluid grid system with 1% of gutter placed inside the columns:
+For a 12 columns fluid grid system with 1% of gutter inside the columns:
 ```stylus
 grid(Grid, Col, 12, 1%, inner)
 ```
@@ -38,8 +38,9 @@ For a 5 columns fluid grid system with 2% of gutter:
 ```stylus
 grid(Grid, Col, 5, 2%)
 ```
+etc...
 
-All options available:
+All options available are:
 ```stylus
   container-selector-name = Grid, //parent container class
   column-number-selector-name = Col, //will be suffixed with __{column}
