@@ -10,13 +10,13 @@ grid()
 
 Your markup should look like this:
 ```stylus
-&lt;div class="Grid"&gt;
-  &lt;div class="Col__1"&gt;...&lt;/div&gt;
-  &lt;div class="Col__11"&gt;...&lt;/div&gt;
-  &lt;div class="Col__2"&gt;...&lt;/div&gt;
-  &lt;div class="Col__10"&gt;...&lt;/div&gt;
+<div class="Grid">;
+  <div class="Col__1">...</div>
+  <div class="Col__11">...</div>
+  <div class="Col__2">...</div>
+  <div class="Col__10">...</div>
   ...
-&lt;/div&gt;
+</div>
 ```
 
 ## Credits
