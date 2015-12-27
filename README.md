@@ -3,11 +3,13 @@ A simple and semantic grid system written in Stylus.<br/>
 Example page at [http://alexisgaillard.github.io/stylus-grid/](http://alexisgaillard.github.io/stylus-grid/)
 
 ### Get started
-By default the mixin output a 12 columns fluid grid system with 1% of gutter and a maximum width of 1272px.
+Install the stylus-grid.styl in your mixin folder, import, then init as follow:
 ```stylus
 @import "stylus-grid"
 grid()
 ```
+By default the mixin output the CSS required for a 12 columns fluid grid system with 1% of gutter and a maximum width of 1272px.
+
 
 Your markup should look like this:
 ```html
