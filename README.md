@@ -6,7 +6,7 @@ Example page at [http://alexisgaillard.github.io/stylus-grid/](http://alexisgail
   * [stylus](https://github.com/LearnBoost/stylus)
 
 ### Get started
-Install the stylus-grid.styl in your mixin folder, import, then init as follow:
+Install the stylus-grid.styl in your mixin folder, import, and init as follow:
 ```stylus
 @import "stylus-grid"
 grid()
