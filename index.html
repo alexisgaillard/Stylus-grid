@@ -14,15 +14,16 @@
     <meta name="twitter:site" content="@MovingIslands">
     <meta name="twitter:creator" content="@MovingIslands">
     <meta name="twitter:title" content="Stylus Semantic Grid">
-    <meta name="twitter:description" content="A simple and semantic grid system written in Stylus, this mixin give you freedom to create completely custom grids, with perfectly optimized outputs, in less than a line.">
+    <meta name="twitter:description" content="A simple semantic grid system written in Stylus, this mixin give you freedom to create completely custom grids, with perfectly optimized outputs, in less than a line.">
     <meta name="twitter:image" content="http://alexisgaillard.github.io/stylus-grid/fb.jpg">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-    <link rel="stylesheet" type="text/css" href="http://alexisgaillard.github.io/stylus-grid/stylesheets/stylesheet.css" media="screen">
+<!--     <link rel="stylesheet" type="text/css" href="http://alexisgaillard.github.io/stylus-grid/stylesheets/stylesheet.css" media="screen"> -->
+<link rel="stylesheet" type="text/css" href="../style.css" media="screen">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div class="Wrapper">
-  <section class="Page__header">
+  <header class="Page__header">
     <h1>STYLUS SEMANTIC GRID</h1>
     <span class="Button">
     <a href="https://github.com/alexisgaillard/stylus-grid">
@@ -69,32 +70,29 @@
     </svg>
     </a>
   </span>
-  </section>
+  </header>
   <section class="Section">
     <div class="Grid">
       <div class="Col__8 Pre__2 Post__2">
-      <p>A simple and semantic grid system written in Stylus, this mixin give you freedom to create completely custom grids, in less than a line,  ~ 2k minified.</p>
+      <p class="Section__header">A simple and semantic grid system written in Stylus, this mixin give you freedom to create completely custom grids, in less than a line,  ~ 2k minified.</p>
       </div>
       <div class="Col__6">
-        <p>Get started:</p>
-        <p>01 Clone</p>
+        <p>Get started, clone</p>
         <pre>
           <code class="bash">
 # git clone git://github.com/alexisgaillard/stylus-grid.git
 # cd stylus-grid
-# stylus-grid.styl -o path/to/your/stylesheets
-          </code>
+# stylus-grid.styl -o path/to/your/stylesheets</code>
         </pre>
-        <p>02 Import and init</p>
+        <p>Import and init</p>
         <pre>
           <code class="styl">
 @import "stylus-grid"
-grid()
-          </code>
+grid()</code>
         </pre>
       </div>
       <div class="Col__6">
-        <p>Your marColp should look like this:</p>
+        <p>Your markup could look like this:</p>
         <pre>
           <code class="html">
 &lt;div class="Grid"&gt;
@@ -103,8 +101,7 @@ grid()
   &lt;div class="Col__2"&gt;...&lt;/div&gt;
   &lt;div class="Col__10"&gt;...&lt;/div&gt;
   ...
-&lt;/div&gt;
-          </code>
+&lt;/div&gt;</code>
         </pre>
       </div>
       <div class="Col__12"><h1>Default 12 columns grid</h1></div>
@@ -224,8 +221,7 @@ grid()
       <div class="Col__6">
         <pre>
           <code class="styl">
-grid(Grid, Col, 12, 1%, true)
-          </code>
+grid(Grid, Col, 12, 1%, true)</code>
         </pre>
       </div>
     </div>
@@ -290,8 +286,7 @@ grid(Grid, Col, 12, 1%, true)
         <div class="Col__6">
         <pre>
           <code class="styl">
-grid(Grid, Col, 5, 2%)
-          </code>
+grid(Grid, Col, 5, 2%)</code>
         </pre>
       </div>
     </div>
@@ -322,21 +317,21 @@ grid(Grid, Col, 5, 2%)
  gutter-w = 1%  //percentage can be set to 0
  gutter-inner = false  //if true set de gutters as padding instead of margin
  pre-post = true  //if false avoid the output of the .Pre and .Post classes
- deepness = 6  //define the number of decimals on the percentage's width values
-          </code>
+ deepness = 6  //define the number of decimals on the percentage's width values</code>
         </pre>
+      </div>
+      <div class="Col__6">
+        <p>Notes:</p>
+        <p>The aim of this grid system is to be ligthweight</p>
+        <p>The grids do not use a "row" wrapper and doesn't clear the float after the last element of each line, if needed just build a solution with a nth-child selector and a "cycle" logic.</p>
+        <p>To avoid the use of negative margins or hacky technics, gutter size in percent will be relative to the inner space of the wrapper, for ex. if the gutter is set on 1% we are actually talking of 1% of 99%, something closer to 0.989898...%</p>
+        <p>The ".Nest" class remove margin or padding on the columns 
       </div>
     </div>
   </section>
   <footer class="Section Footer">
     <div class="Grid">
-      <div class="Col__3">
-        Share
-      </div>
-      <div class="Col__3">
-        <p></p>
-      </div>
-      <div class="Col__3">
+      <div class="Col__3 Post__6">
       <p>Developed in Tōkyō by Alexis Gaillard. Licensed under <a href="http://opensource.org/licenses/mit-license.php">MIT.</a></p>
       </div>
       <div class="Col__3">
