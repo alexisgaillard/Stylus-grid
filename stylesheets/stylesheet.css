@@ -140,6 +140,7 @@ input[type=button] {
 }
 body {
   font-size: 13px;
+  line-height: 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: #303030;
@@ -165,7 +166,7 @@ code {
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
   white-space: -o-pre-wrap;
-  background: #faf8f0;
+  background: #fff;
 }
 h1 {
   text-align: center;
@@ -174,6 +175,7 @@ h1 {
 }
 .Wrapper {
   overflow: hidden;
+  min-width: 375px;
   background-color: #ba00ff;
   background-image: -webkit-linear-gradient(left, #ba00ff 0%, #71edff 100%);
   background-image: -moz-linear-gradient(left, #ba00ff 0%, #71edff 100%);
@@ -183,7 +185,7 @@ h1 {
 }
 .Button {
   display: block;
-  width: 105px;
+  width: 100px;
   padding: 13px 26px;
   border: 1px solid #fff;
   margin: 0 auto;
@@ -357,8 +359,12 @@ h1 {
 [class*="Col"] p {
   padding: 5px;
 }
+.Section__header {
+  margin: 52px 0 65px 0;
+}
 .Section {
   background-color: #f1f4f6;
+  padding: 13px 0 13px 0;
 }
 .Section .Grid {
   background-image: none !important;
