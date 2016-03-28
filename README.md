@@ -1,5 +1,5 @@
 # stylus-grid
-A simple and semantic grid system written in Stylus.
+A simple and semantic grid system written in Stylus.<br/>
 [Demo page](http://stylus-grid.movingislands.com).
 
 ### Dependencies
