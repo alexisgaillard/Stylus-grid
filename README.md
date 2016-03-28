@@ -1,6 +1,6 @@
 # stylus-grid
 A simple and semantic grid system written in Stylus.<br/>
-[Demo page](http://stylus-grid.movingislands.com).
+[Demo page](http://stylus-grid.movingislands.com)
 
 ### Dependencies
   * [stylus](https://github.com/LearnBoost/stylus)
